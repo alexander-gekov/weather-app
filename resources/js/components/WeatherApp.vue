@@ -205,13 +205,13 @@
             toDayOfWeek(timestamp) {
                 const newDate = new Date(timestamp * 1000);
                 const days = [
-                    "НЕДЕЛЯ",
-                    "ПОНЕДЕЛНИК",
-                    "ВТОРНИК",
-                    "СРЯДА",
-                    "ЧЕТВЪРТЪК",
-                    "ПЕТЪК",
-                    "СЪБОТА"
+                    "НЕД",
+                    "ПОН",
+                    "ВТО",
+                    "СРЯ",
+                    "ЧЕТ",
+                    "ПЕТ",
+                    "СЪБ"
                 ];
                 return days[newDate.getDay()];
             }
