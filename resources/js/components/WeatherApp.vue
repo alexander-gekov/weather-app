@@ -1,17 +1,17 @@
 <template>
-    <div class="text-white mb-8">
+    <div class="text-white lg:mb-8 mb-4">
         <div class="places-input text-gray-800">
             <input type="search" id="address" class="form-control w-full" placeholder="In which city do you live?"/>
 
             <p>Selected: <strong id="address-value">none</strong></p>
         </div>
         <div
-                class="weather-container font-sans w-128 max-w-lg rounded-lg overflow-hidden bg-gray-900 shadow-lg mt-4"
+                class="weather-container font-sans w-full max-w-lg rounded-lg overflow-hidden bg-gray-900 shadow-lg mt-4"
         >
             <div class="current-weather flex items-center justify-between px-6 py-8">
                 <div class="flex items-center">
                     <div>
-                        <div class="text-5xl font-semibold">{{ currentTemperature.actual }} °C</div>
+                        <div class="lg:text-5xl text-2xl font-semibold">{{ currentTemperature.actual }} °C</div>
                         <div>Усеща се като {{ currentTemperature.feels }}°C</div>
                     </div>
                     <div class="pl-2">

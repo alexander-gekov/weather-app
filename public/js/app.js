@@ -37456,14 +37456,14 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "text-white mb-8" }, [
+  return _c("div", { staticClass: "text-white lg:mb-8 mb-4" }, [
     _vm._m(0),
     _vm._v(" "),
     _c(
       "div",
       {
         staticClass:
-          "weather-container font-sans w-128 max-w-lg rounded-lg overflow-hidden bg-gray-900 shadow-lg mt-4"
+          "weather-container font-sans w-full max-w-lg rounded-lg overflow-hidden bg-gray-900 shadow-lg mt-4"
       },
       [
         _c(
@@ -37475,9 +37475,11 @@ var render = function() {
           [
             _c("div", { staticClass: "flex items-center" }, [
               _c("div", [
-                _c("div", { staticClass: "text-5xl font-semibold" }, [
-                  _vm._v(_vm._s(_vm.currentTemperature.actual) + " °C")
-                ]),
+                _c(
+                  "div",
+                  { staticClass: "lg:text-5xl text-2xl font-semibold" },
+                  [_vm._v(_vm._s(_vm.currentTemperature.actual) + " °C")]
+                ),
                 _vm._v(" "),
                 _c("div", [
                   _vm._v(
@@ -49933,9 +49935,9 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! E:\Documents\Fontys\Semester 2\PRJ\weather-app\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! E:\Documents\Fontys\Semester 2\PRJ\weather-app\resources\sass\app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! E:\Documents\Fontys\Semester 2\PRJ\weather-app\resources\css\main.css */"./resources/css/main.css");
+__webpack_require__(/*! E:\Documents\Fontys\Other\weather-app\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! E:\Documents\Fontys\Other\weather-app\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! E:\Documents\Fontys\Other\weather-app\resources\css\main.css */"./resources/css/main.css");
 
 
 /***/ })
