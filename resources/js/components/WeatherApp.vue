@@ -31,7 +31,7 @@
                         class="flex items-center"
                         :class="{'mt-8' : index > 0}"
                 >
-                    <div class="w-2/6 text-lg text-gray-200">{{toDayOfWeek(day.dt)}}</div>
+                    <div class="w-1/6 text-lg text-gray-200">{{toDayOfWeek(day.dt)}}</div>
                     <div class="w-3/6 px-4 flex items-center">
                         <div>
                             <canvas
@@ -43,9 +43,9 @@
                         </div>
                         <div class="ml-3">{{day.weather[0].description}}</div>
                     </div>
-                    <div class="w-1/6 text-right">
+                    <div class="w-2/6 text-right">
                         <div>{{Math.round(day.main.temp_max)}} °C</div>
-                        <div>{{Math.round(day.main.temp_min)}} °C</div>
+                        <div>{{Math.round(day.main.feels_like)}} °C</div>
                     </div>
                 </div>
             </div>
@@ -70,6 +70,7 @@
                     }
                 }
             }).configure({
+                lang: 'bg',
                 type: 'city',
                 aroundLatLngViaIP: false,
             });

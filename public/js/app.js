@@ -1978,6 +1978,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       }
     }).configure({
+      lang: 'bg',
       type: 'city',
       aroundLatLngViaIP: false
     });
@@ -2078,7 +2079,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     toDayOfWeek: function toDayOfWeek(timestamp) {
       var newDate = new Date(timestamp * 1000);
-      var days = ["НЕДЕЛЯ", "ПОНЕДЕЛНИК", "ВТОРНИК", "СРЯДА", "ЧЕТВЪРТЪК", "ПЕТЪК", "СЪБОТА"];
+      var days = ["НЕД", "ПОН", "ВТО", "СРЯ", "ЧЕТ", "ПЕТ", "СЪБ"];
       return days[newDate.getDay()];
     }
   }
@@ -37530,7 +37531,7 @@ var render = function() {
                 class: { "mt-8": index > 0 }
               },
               [
-                _c("div", { staticClass: "w-2/6 text-lg text-gray-200" }, [
+                _c("div", { staticClass: "w-1/6 text-lg text-gray-200" }, [
                   _vm._v(_vm._s(_vm.toDayOfWeek(day.dt)))
                 ]),
                 _vm._v(" "),
@@ -37551,13 +37552,13 @@ var render = function() {
                   ])
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "w-1/6 text-right" }, [
+                _c("div", { staticClass: "w-2/6 text-right" }, [
                   _c("div", [
                     _vm._v(_vm._s(Math.round(day.main.temp_max)) + " °C")
                   ]),
                   _vm._v(" "),
                   _c("div", [
-                    _vm._v(_vm._s(Math.round(day.main.temp_min)) + " °C")
+                    _vm._v(_vm._s(Math.round(day.main.feels_like)) + " °C")
                   ])
                 ])
               ]
