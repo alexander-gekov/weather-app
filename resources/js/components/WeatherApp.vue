@@ -15,7 +15,6 @@
                         <div>Усеща се като {{ currentTemperature.feels }}°C</div>
                     </div>
                     <div class="pl-2">
-                        <div class="font-semibold">{{ currentTemperature.summary }}</div>
                         <div class="text-lg">{{ location.name }}</div>
                     </div>
                 </div>
